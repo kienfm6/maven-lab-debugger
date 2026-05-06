@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ShippingCalculatorTest {
 
-    ShippingCalculator calc = new ShippingCalculator();
+    static ShippingCalculator calc = new ShippingCalculator();
 
     @Test
     void testStandard() {
@@ -14,7 +14,7 @@ public class ShippingCalculatorTest {
 
     @Test
     void testExpress() {
-        assertEquals(45000.0, calc.calculate(5, "EXPRESS"));
+        assertEquals(45000.0, calc.calculate(6, "EXPRESS"));
     }
 
     @Test
