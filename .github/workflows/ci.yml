@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v4 #first fix
+        uses: actions/checkout@v4 #first fix
 
       - name: Set up JDK 17
         uses: actions/setup-java@v3
