@@ -13,5 +13,5 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn package
+        run: mvn -B package --file pom.xml #first fix: allow JDK to recognize pom.xml file
 
